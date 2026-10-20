@@ -38,8 +38,7 @@
     <Reference Include="$(Plugins)\ModLibrary.dll" />
   </ItemGroup>
 
-  <!-- Skipped in GitHub Actions (CI=true), where the runner must not touch the installed mods. -->
-  <Target Name="Deploy" AfterTargets="Build" Condition="'$(CI)' != 'true'">
+  <Target Name="Deploy" AfterTargets="Build">
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(Plugins)" />
   </Target>
 </Project>

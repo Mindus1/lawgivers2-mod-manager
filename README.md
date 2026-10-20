@@ -78,7 +78,7 @@ dotnet build -c Release
 
 The project expects the game in `D:\Games\Steam\steamapps\common\Lawgivers II`. Pass `-p:GameDir="..."` if yours is somewhere else. The build copies the DLL into `BepInEx\plugins`, so close the game first.
 
-Pushing a version tag like `v1.2.0` builds the mod on a self-hosted runner and attaches the DLL to a GitHub release.
+To publish a release, bump the version in `Plugin.cs`, commit, and run `release.ps1`. It builds the DLL, tags the version, pushes the tag and creates a GitHub release with the DLL attached.
 
 ## License
 
