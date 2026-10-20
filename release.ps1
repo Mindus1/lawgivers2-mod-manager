@@ -23,7 +23,7 @@ if (git tag --list $tag) { throw "$tag already exists. Bump the version in Plugi
 dotnet build -c Release
 Assert-Success 'The build'
 
-git tag $tag
+git tag -m "$project $tag" $tag
 Assert-Success 'Tagging'
 
 git push origin HEAD $tag
