@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in the Mod Manager doesn't work or breaks the game.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If a mod misbehaves only while the Mod Manager is installed, this is the right place. If a mod is broken on its own, report it to that mod.
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: Shown at the bottom of the main menu.
+      placeholder: "0.17.2"
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod Manager version
+      description: Shown next to the name in the Mods window, or in the release you downloaded.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other mods
+      description: Every other mod in `BepInEx\plugins`, with versions if you know them.
+      placeholder: |
+        Mod Library 1.1.0
+        Mod Manager 1.1.0
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: The steps from starting the game. Say if it happens every time or only sometimes.
+      placeholder: |
+        1. Open MODS in the main menu
+        2. Switch off ...
+        3. Restart the game
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Drag `BepInEx\LogOutput.log` in here. It's overwritten every time the game starts, so grab it right after the problem.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If something looks wrong, a screenshot helps a lot.

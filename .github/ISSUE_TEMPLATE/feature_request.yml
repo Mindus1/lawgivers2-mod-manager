@@ -1,0 +1,17 @@
+name: Feature request
+description: An idea for the Mods window or for how mods are switched.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What you're trying to do, and what gets in the way right now.
+    validations:
+      required: true

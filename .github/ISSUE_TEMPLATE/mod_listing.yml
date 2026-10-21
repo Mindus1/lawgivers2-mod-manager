@@ -1,0 +1,33 @@
+name: Mod shows up wrong
+description: A mod is missing from the list, has the wrong name or version, or its requirements are off.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Mods window reads every DLL in `BepInEx\plugins`, including `.dll.disabled` files. A mod's name, version and requirements come from its `[BepInPlugin]` and `[BepInDependency]` attributes.
+  - type: input
+    id: mod
+    attributes:
+      label: Which mod
+      description: Its name and where you got it.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+      description: For example "not in the list", "can't be switched off" or "says it needs a mod I have installed".
+    validations:
+      required: true
+  - type: textarea
+    id: folder
+    attributes:
+      label: Plugins folder
+      description: The file names in `BepInEx\plugins`, including subfolders.
+      render: text
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Drag `BepInEx\LogOutput.log` in here. Lines starting with `[Warning:Mod Manager]` are the interesting ones.
