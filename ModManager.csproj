@@ -5,7 +5,7 @@
     <LangVersion>latest</LangVersion>
     <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <!-- Another install: dotnet build -p:GameDir="C:\path\to\Lawgivers II" -->
-    <GameDir Condition="'$(GameDir)' == ''">D:\Games\Steam\steamapps\common\Lawgivers II</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Lawgivers II</GameDir>
     <Core>$(GameDir)\BepInEx\core</Core>
     <Interop>$(GameDir)\BepInEx\interop</Interop>
     <Plugins>$(GameDir)\BepInEx\plugins</Plugins>

@@ -76,7 +76,7 @@ You need the .NET SDK (6 or newer) and the game with BepInEx installed. The proj
 dotnet build -c Release
 ```
 
-The project expects the game in `D:\Games\Steam\steamapps\common\Lawgivers II`. Pass `-p:GameDir="..."` if yours is somewhere else. The build copies the DLL into `BepInEx\plugins`, so close the game first.
+The project expects the game in Steam's default folder, `C:\Program Files (x86)\Steam\steamapps\common\Lawgivers II`. If yours is somewhere else, pass `-p:GameDir="..."`, or put a `Directory.Build.props` that sets `GameDir` in the folder above the project. The build copies the DLL into `BepInEx\plugins`, so close the game first.
 
 To publish a release, bump the version in `Plugin.cs`, commit, and run `release.ps1`. It builds the DLL, tags the version, pushes the tag and creates a GitHub release with the DLL attached.
 
