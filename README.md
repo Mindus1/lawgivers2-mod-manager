@@ -24,17 +24,17 @@ Mods can declare which other mods they need. When you turn one on, everything it
 
 The Mod Manager itself and the [Mod Library](https://github.com/Mindus1/lawgivers2-mod-library) it's built on are always on. To get rid of them, delete their DLLs.
 
-<img src="docs/main-menu.png" alt="The MODS button in the main menu" width="300" align="right">
-
 ## Installation
 
 1. Install [BepInEx 6 for IL2CPP](https://builds.bepinex.dev/projects/bepinex_be) (x64, build 790 or newer) and start the game once so it can set itself up.
 2. Download `ModManager.dll` from [Releases](../../releases) and `ModLibrary.dll` from the [Mod Library](https://github.com/Mindus1/lawgivers2-mod-library).
 3. Put both into `Lawgivers II\BepInEx\plugins`.
 
-The MODS button sits right below Settings. If it doesn't show up, `BepInEx\LogOutput.log` usually says why.
+The MODS button sits right below Settings, both in the main menu and in the pause menu. If it doesn't show up, `BepInEx\LogOutput.log` usually says why.
 
-<br clear="right">
+<p align="center">
+  <img src="docs/main-menu.png" alt="The MODS button in the main menu" width="360">
+</p>
 
 ## For mod authors
 
