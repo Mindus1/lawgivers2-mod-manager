@@ -6,3 +6,6 @@ contact_links:
   - name: Problem with the Cheat Menu?
     url: https://github.com/Mindus1/lawgivers2-cheat-menu/issues/new/choose
     about: Report it in the Cheat Menu repository instead.
+  - name: Problem with the MCP Server?
+    url: https://github.com/Mindus1/lawgivers2-mcp-server/issues/new/choose
+    about: Report it in the MCP Server repository instead.
